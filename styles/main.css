@@ -11,19 +11,20 @@
     padding-top: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .cards__container {
-    height: 600px;
+    height: 37.5vw;
     flex: 1 1 auto;
     background: rgb(255, 255, 255);
     display: grid;
     justify-items: stretch;
-    grid-template-columns: repeat(7, 1fr) 200px;
-    grid-template-rows: repeat(7, 1fr) 75px;
+    grid-template-columns: repeat(auto-fill, 12.5%);
+    grid-template-rows: repeat(auto-fill, 12.5%);
 }
+
 
 /*
     BSA card styles
@@ -74,6 +75,7 @@
 .bsa__join-button:hover {
     background: #3100a5;
 }
+
 
 /*
     QA card styles
@@ -130,6 +132,7 @@
     transform: rotateY(360deg);
 }
 
+
 /*
     JS card styles
 */
@@ -159,6 +162,7 @@
     font-size: 24px;
     font-weight: bold;
 }
+
 
 /*
     java card styles
@@ -194,9 +198,10 @@
     font-weight: bold;
 }
 
-.fly-down-card:hover > .java__front{
+.fly-down-card:hover>.java__front {
     transform: translateY(100%);
 }
+
 
 /*
     .NET card styles
@@ -239,9 +244,10 @@
     font-weight: bold;
 }
 
-.resize-card:hover > .resize-card__front {
+.resize-card:hover>.resize-card__front {
     transform: scale(0);
 }
+
 
 /*
     php card styles
@@ -260,6 +266,7 @@
     background: #8690be;
     transform-origin: top right;
 }
+
 
 /*
     events card styles
@@ -309,6 +316,7 @@
     transform: translateX(100%);
 }
 
+
 /*
     blog card styles
 */
@@ -336,6 +344,7 @@
 .blog:hover>.blog__title {
     transform: translateX(100%);
 }
+
 
 /*
     contacts card styles
@@ -382,3 +391,71 @@
 .contacts__content-icon:hover {
     color: #4458d6;
 }
+
+
+/* @media (max-width: 972px) {
+    .cards_container {
+        grid-template-areas: "bsa js js events" "bsa js js blog" "bsa js js contacts" "java java php php" "qa qa net net";
+        grid-template-columns: 5fr 1fr 3fr 3fr;
+        grid-template-rows: 1fr 1fr .7fr 1fr 1fr;
+        padding: 3rem var(2.5rem);
+    }
+    .bsa {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 6;
+    }
+    .js {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 6;
+    }
+    .events {
+        overflow: hidden;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .blog {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        overflow: hidden;
+    }
+    .contacts {
+        position: relative;
+        overflow: hidden;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    .java {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 6;
+        grid-row-end: 8;
+    }
+    .php {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 8;
+    }
+    .qa {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 8;
+        grid-row-end: 10;
+    }
+    .dotnet {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 8;
+        grid-row-end: 10;
+    }
+} */
