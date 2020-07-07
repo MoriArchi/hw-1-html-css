@@ -1,11 +1,35 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    
     --animate-duration: 1s;
+}
+
+.page {
+    display: grid;
+    grid-template-areas: "header" "content" "footer";
+    grid-template-rows: 6vh 88vh 6vh;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    background: #f8f7fe;
+}
+
+.page__header {
+    grid-area: header;
+}
+
+.page__content {
+    grid-area: content;
+}
+
+.page__footer {
+    grid-area: footer;
 }
