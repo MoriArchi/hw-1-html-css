@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/alerts.css">
     <!-- Font Awesome and Material icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
@@ -176,5 +177,53 @@
         <p class="footer__credits">© Powered by Binary Studio Team</p>
     </footer>
 
+    <div class="alert-message">
+        <div class="alert-message__container">
+
+            <div class="alert-message__item alert-message__item--error">
+                <div class="alert-message__item-icon">
+                    <i class="fa fa-exclamation-circle"></i>
+                </div>
+                <div>
+                    <div class="alert-message__item-header">
+                        Error
+                    </div>
+                    <div class="alert-message__item-text">
+                        Something went wrong. Please try again later.
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert-message__item alert-message__item--success">
+                <div class="alert-message__item-icon">
+                    <i class="fa fa-check-circle"></i>
+                </div>
+                <div>
+                    <div class="alert-message__item-header">
+                        Success
+                    </div>
+                    <div class="alert-message__item-text">
+                        Profile was updated.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="alert-message__item alert-message__item--warning">
+                <div class="alert-message__item-icon">
+                    <i class="fa fa-check-circle"></i>
+                </div>
+                <div>
+                    <div class="alert-message__item-header">
+                        Warning
+                    </div>
+                    <div class="alert-message__item-text">
+                        Cant upload logo (deadline is coming pls fix it ^-^).
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
