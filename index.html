@@ -3,15 +3,19 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Binary Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSA | HTML/CSS</title>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <!-- Font Awesome and Material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
 </head>
 
-<body>
-    <div id="root">
+<body class="page">
+    <header class="page__header">
         <div class="header">
             <div class="header__logo">
                 <img src="assets/binary-studio-logo.png" alt="Logo" />
@@ -31,30 +35,146 @@
                 </div>
             </div>
         </div>
+    </header>
 
+    <main class="page__content">
         <div class="main-layout">
             <div class="container">
                 <div class="cards__container">
+                    <div class="bsa">
+                        <div class="flip-card">
+                            <div class="bsa__flip-card-front flip-card__front flip-card__item">
+                                <div class="flip-card__bsa-logo-wrapper">
+                                    <img class="flip-card__bsa-logo" src="assets/logo.png" alt="Binary Studio Academy">
+                                </div>
+                            </div>
+                            <div class="bsa__flip-card-back flip-card__back flip-card__item">
+                                <button class="bsa__join-button" type="button">Join</button>
+                            </div>
+                        </div>
+                    </div>
 
-                    <div class="cards__item--binary"></div>
-                    <div class="cards__item--qa"></div>
-                    <div class="cards__item--js"></div>
-                    <div class="cards__item--java"></div>
-                    <div class="cards__item--php"></div>
-                    <div class="cards__item--dotnet"></div>
-                    <div class="cards__item--events"></div>
-                    <div class="cards__item--blog"></div>
-                    <div class="cards__item--contacts"></div>
+                    <div class="qa">
+                        <div class="flip-card">
+                            <div class="qa__flip-card-front flip-card__front flip-card__item">
+                                <span>QA</span>
+                            </div>
+                            <div class="qa__flip-card-back flip-card__back flip-card__item">
+                                <span class="back">Advanced online course focusing on the finer points of QA</span>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="js">
+                        <div class="flip-card">
+                            <div class="js__flip-card-front flip-card__front flip-card__item">
+                                JS
+                            </div>
+                            <div class="js__flip-card-back flip-card__back flip-card__item">
+                                An online intensive course on building web applications with JavaScript
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="java">
+                        <div class="fly-down-card">
+                            <div class="java__front card-item card-title">
+                                Java
+                            </div>
+                            <div class="java__back card-item card-content">
+                                Advanced online course on building web applications with Java
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="php">
+                        <div class="resize-card">
+                            <div class="resize-card__front card-item resize-card__php">
+                                <span>
+                                    php
+                                </span>
+                            </div>
+                            <div class="resize-card__back card-item">
+                                <span>
+                                    An online intensive course on building web applications with PHP
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="net">
+                        <div class="resize-card">
+                            <div class="resize-card__front card-item resize-card__net">
+                                <span>
+                                    .NET
+                                </span>
+                            </div>
+                            <div class="resize-card__back card-item">
+                                <span>
+                                    An online intensive course on building web applications with .NET
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="events card">
+                        <div class="events__title card-item card-title">
+                            <span>Events</span>
+                        </div>
+                        <div class="events__content card-item card-content">
+                            <span>
+                                У березні квітні відбулася серія наших онлайн трансляцій по веб-розробці під кодовою
+                                назвою
+                                Homeference.
+                                Ми на деякий час залишимо посилання на запис трансляцій нижче.
+                                Дивись, шарь з друзями, а щоб не пропустити майбутні події - підписуйся на
+                                <a href="https://t.me/bsacademy" target="_blank">телеграм</a> Binary Studio Academy.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="blog card">
+                        <div class="blog__title card-item card-title">
+                            <span>Blog</span>
+                        </div>
+                        <div class="blog__content card-tem card-content">
+                            <span>
+                                Ділимося інсайтами Академії, досвідом створення world-class проектів та роздумами
+                                про
+                                життя,
+                                код, роботу.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="contacts card">
+                        <div class="contacts__title card-item card-title">
+                            Contacts
+                        </div>
+                        <div class="contacts__content card-item">
+                            <a href="https://www.facebook.com/Binary.Studio.Company"
+                                class="contacts__content-icon-wrapper" target="_blank" aria-label="BSA on the Facebook">
+                                <i class="fab fa-facebook contacts__content-icon"></i>
+                            </a>
+                            <a href="https://t.me/bsacademy" class="contacts__content-icon-wrapper" target="_blank"
+                                aria-label="BSA on the Telegram">
+                                <i class="fab fa-telegram contacts__content-icon"></i>
+                            </a>
+                            <a href="https://www.instagram.com/binary_studio_academy"
+                                class="contacts__content-icon-wrapper" target="_blank"
+                                aria-label="BSA on the Instagram">
+                                <i class="fab fa-instagram contacts__content-icon"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="footer">
-                <span> © Powered by Binary Studio Team</span>
-            </div>
-
         </div>
-    </div>
-</body>
+    </main>
 
+    <footer class="page__footer">
+        <p class="footer__credits">© Powered by Binary Studio Team</p>
+    </footer>
+
+</body>
 </html>
